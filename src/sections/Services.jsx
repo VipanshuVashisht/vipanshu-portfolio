@@ -10,11 +10,11 @@ gsap.registerPlugin(ScrollTrigger)
 const Services = () => {
     const text = `I build secure, high-performance full-stack apps
     with smooth UX to drive growth not headaches.`
-    const servicesRefs = useRef([]);
+    const serviceRefs = useRef([]);
     const isDesktop = useMediaQuery({ minWidth: "48rem" }); //768px: Using rem keeps breakpoints responsive to user font scaling
 
     useGSAP(() => {
-        servicesRefs.current.forEach((el) => {
+        serviceRefs.current.forEach((el) => {
             if(!el) return;
 
             gsap.from(el, {
@@ -43,7 +43,7 @@ const Services = () => {
             />
             {servicesData.map((service, index) => (
                 <div
-                    ref={(el) => (servicesRefs.current[index] = el)}
+                    ref={(el) => (serviceRefs.current[index] = el)}
                     key={index}
                     className="sticky px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
                     style={

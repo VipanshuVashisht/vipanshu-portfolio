@@ -24,7 +24,7 @@ const Hero = () => {
                 className="absolute inset-0 -z-50 w-full h-full"
             >
                 <Canvas
-                    shadows
+                    dpr={[1, 1.5]}
                     camera={{ position: [0, 0, -10], fov: 17.5, near: 1, far: 20 }}
                 >
                     <ambientLight intensity={0.5} />

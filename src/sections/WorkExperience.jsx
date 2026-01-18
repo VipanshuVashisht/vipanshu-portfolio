@@ -99,7 +99,7 @@ const WorkExperience = () => {
     });
 
     return (
-        <section id="experience" className="min-h-screen bg-black rounded-t-4xl">
+        <section id="experience" className="min-h-screen bg-black rounded-t-4xl overflow-x-hidden">
             <AnimatedHeaderSection
                 subTitle="From code to impact, Building the future"
                 title="Experience"
