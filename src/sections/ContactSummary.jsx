@@ -12,7 +12,7 @@ const ContactSummary = () => {
         "Collaboration",
         "Excellence",
     ];
-    const items2 = ["contact us", "contact us", "contact us", "contact us", "contact us"];
+    const items2 = Array(5).fill("CONTACT US ");
 
     useGSAP(() => {
         gsap.to(containerRef.current, {
